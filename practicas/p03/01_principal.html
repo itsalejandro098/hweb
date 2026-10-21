@@ -8,60 +8,78 @@
 
 <body>
 
-    <!-- h1: título principal de la página. Solo debe haber uno. -->
-    <h1>Guacamole (clásico)</h1>
+    <!-- Cambio: agregué <main> porque identifica el contenido principal de la
+         página; solo debe haber uno y ayuda a los lectores de pantalla a saltar
+         directo al contenido. -->
+    <main>
 
-    <!-- blockquote: se usa para citas textuales largas de otra fuente. -->
-    <blockquote>
-        "Existe un condimento que no puede faltar en toda mesa mexicana. Algunos lo consideran una salsa, otros un
-        aderezo, algunos incluso le llaman ensalada, otros simplemente le llaman por su nombre propio: Guacamole."
-    </blockquote>
+        <!-- Cambio: la receta ahora está en <article> porque es contenido
+             autónomo que tiene sentido por sí solo. -->
+        <article>
 
-    <!-- p: define un párrafo de texto normal. -->
-    <p>Aunque el guacamole se prepara de diferentes formas según la zona de la que provenga la receta, la base suele ser
-        la misma. Aquí te mostramos una receta muy completa para preparar esta conocida salsa mexicana:</p>
+            <!-- Cambio: agregué <header> para agrupar el título y la cita
+                 introductoria de la receta. -->
+            <header>
+                <!-- h1: título principal de la página. Solo debe haber uno. -->
+                <h1>Guacamole (clásico)</h1>
 
-    <!-- h2: encabezado de sección, un nivel debajo del h1. -->
-    <h2>Ingredientes</h2>
+                <!-- blockquote: se usa para citas textuales largas de otra fuente. -->
+                <blockquote>
+                    "Existe un condimento que no puede faltar en toda mesa mexicana. Algunos lo consideran una salsa,
+                    otros un aderezo, algunos incluso le llaman ensalada, otros simplemente le llaman por su nombre
+                    propio: Guacamole."
+                </blockquote>
+            </header>
 
-    <!-- ul: lista desordenada. Los ingredientes no tienen un orden obligatorio. -->
-    <ul>
-        <li>4 o 5 aguacates maduros</li>
-        <li>1 cebolla mediana (normal)</li>
-        <li>1 tomate mediano</li>
-        <li>1 chile serrano (o un jalapeño en conserva)</li>
-        <li>Zumo de 1/2 lima o limón</li>
-        <li>1 manojo de cilantro fresco</li>
-        <li>Sal</li>
-    </ul>
+            <!-- p: define un párrafo de texto normal. -->
+            <p>Aunque el guacamole se prepara de diferentes formas según la zona de la que provenga la receta, la base
+                suele ser la misma. Aquí te mostramos una receta muy completa para preparar esta conocida salsa
+                mexicana:</p>
 
-    <h2>Instrucciones</h2>
+            <!-- Cambio: agregué <section> porque Ingredientes es un bloque
+                 temático con su propio encabezado. -->
+            <section>
+                <h2>Ingredientes</h2>
 
-    <!-- ol: lista ordenada. Los pasos de una receta deben seguir una secuencia. -->
-    <ol>
-        <li>Lavar bien el tomate y el manojo de cilantro</li>
-        <li>Pelar la cebolla y quitarle la capa exterior</li>
-        <li>Trozar la cebolla y el tomate en trozos muy pequeños</li>
-        <li>Picar las hojas de cilantro lo más fino posible, desechando los tallos</li>
-        <li>Poner todos los ingredientes en un recipiente, preferentemente un molcajete</li>
-        <li>Cortar por la mitad los aguacates, retirando el hueso</li>
-        <li>Sacar toda la pulpa posible de los aguacates y ponerla en el molcajete</li>
-        <li>Añadir el zumo de 1/2 lima con una pizca de sal</li>
-        <li>Añadir un chile serrano muy bien picadito</li>
-        <li>Machacar todos los ingredientes en el molcajete</li>
-    </ol>
+                <!-- ul: lista desordenada. Los ingredientes no tienen un orden obligatorio. -->
+                <ul>
+                    <li>4 o 5 aguacates maduros</li>
+                    <li>1 cebolla mediana (normal)</li>
+                    <li>1 tomate mediano</li>
+                    <li>1 chile serrano (o un jalapeño en conserva)</li>
+                    <li>Zumo de 1/2 lima o limón</li>
+                    <li>1 manojo de cilantro fresco</li>
+                    <li>Sal</li>
+                </ul>
+            </section>
 
-    <p>En caso de no contar con un molcajete, se puede utilizar un tenedor procurando que la pulpa del aguacate se
-        mezcle con los demás ingredientes. Debe quedarnos un guacamole con los trozos visibles, pero opcionalmente puede
-        pasarse por la batidora para dejarlo más cremoso y con una textura más uniforme.</p>
+            <!-- Cambio: agregué <section> porque Instrucciones es otro bloque
+                 temático independiente dentro de la receta. -->
+            <section>
+                <h2>Instrucciones</h2>
 
-    <!--
-        Elementos que existen pero no se necesitaron en esta receta:
-        - h3 a h6: subencabezados de niveles más profundos.
-        - dl, dt, dd: lista de descripción (término y su definición).
-        - pre: texto preformateado que respeta espacios y saltos de línea.
-        - figure y figcaption: imagen o ilustración con su pie de foto.
-    -->
+                <!-- ol: lista ordenada. Los pasos de una receta deben seguir una secuencia. -->
+                <ol>
+                    <li>Lavar bien el tomate y el manojo de cilantro</li>
+                    <li>Pelar la cebolla y quitarle la capa exterior</li>
+                    <li>Trozar la cebolla y el tomate en trozos muy pequeños</li>
+                    <li>Picar las hojas de cilantro lo más fino posible, desechando los tallos</li>
+                    <li>Poner todos los ingredientes en un recipiente, preferentemente un molcajete</li>
+                    <li>Cortar por la mitad los aguacates, retirando el hueso</li>
+                    <li>Sacar toda la pulpa posible de los aguacates y ponerla en el molcajete</li>
+                    <li>Añadir el zumo de 1/2 lima con una pizca de sal</li>
+                    <li>Añadir un chile serrano muy bien picadito</li>
+                    <li>Machacar todos los ingredientes en el molcajete</li>
+                </ol>
+            </section>
+
+            <p>En caso de no contar con un molcajete, se puede utilizar un tenedor procurando que la pulpa del aguacate
+                se mezcle con los demás ingredientes. Debe quedarnos un guacamole con los trozos visibles, pero
+                opcionalmente puede pasarse por la batidora para dejarlo más cremoso y con una textura más
+                uniforme.</p>
+
+        </article>
+    </main>
 
 </body>
 
