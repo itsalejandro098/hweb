@@ -19,37 +19,55 @@
     - q:     cita corta dentro de un párrafo; el navegador agrega las comillas.
     - small: letra pequeña, como advertencias o avisos legales.
     - time:  fecha u hora legible por máquinas gracias al atributo datetime.
--->
+    -->
 
-    <article>
-        <header>
-            <!-- time: datetime usa formato AAAA-MM-DD para que cualquier navegador lo entienda sin importar el idioma. -->
-            <p>publicado por MasterChef, <time datetime="2018-11-15">November 15, 2018</time></p>
-        </header>
+    <!-- Cambio: agregué <main> porque identifica el contenido principal de la
+         página; antes el artículo estaba suelto en el body. -->
+    <main>
 
-        <h2>Bajito y Despacito</h2>
+        <article>
+            <header>
+                <!-- Cambio: moví el <h2> dentro del <header> porque el título y la
+                     fecha de publicación forman juntos la cabecera del artículo. -->
+                <h2>Bajito y Despacito</h2>
 
-        <!-- Aquí "sous vide" lleva dos elementos anidados: dfn (término definido) e i (término técnico en cursiva). -->
-        <p>Esta semana estamos <em>extremadamente</em> emocionados por presentar una
-            nueva técnica de cocina llamada <dfn><i>sous vide</i></dfn>. Con la técnica <i>sous
-                vide</i>, tú sumerges un recipiente (generalmente de plástico sellado
-            al vacío) en un baño de agua que precisamente se adapta a la
-            temperatura requerida para que la comida sea cocinada. En este
-            programa, <cite>Cocina para Geeks</cite>, Jaime Potter describe la técnica como
-            <q>poción mágica a temperatura ultra baja</q>.
-        </p>
+                <!-- Cambio: traduje la fecha al español porque el documento es lang="es";
+                     el atributo datetime se mantiene en formato AAAA-MM-DD para que
+                     cualquier navegador lo entienda sin importar el idioma. -->
+                <p>Publicado por MasterChef, <time datetime="2018-11-15">15 de noviembre de 2018</time></p>
+            </header>
 
-        <p>La siguiente semana, prepararemos <b>Salmon Sous Vide con Eneldo
-                Holandés</b>. Para asistir al programa, contáctanos antes del 30 de
-            Noviembre.</p>
+            <!-- Aquí "sous vide" lleva dos elementos anidados: dfn (término definido) e i (término técnico en cursiva). -->
+            <p>Esta semana estamos <em>extremadamente</em> emocionados por presentar una
+                nueva técnica de cocina llamada <dfn><i>sous vide</i></dfn>. Con la técnica <i>sous
+                    vide</i>, tú sumerges un recipiente (generalmente de plástico sellado
+                al vacío) en un baño de agua que precisamente se adapta a la
+                temperatura requerida para que la comida sea cocinada. En este
+                programa, <cite>Cocina para Geeks</cite>, Jaime Potter describe la técnica como
+                <q>poción mágica a temperatura ultra baja</q>.
+            </p>
 
-        <p>registro@masterchef.com<br>
-            552-336-1800</p>
+            <p>La siguiente semana, prepararemos <b>Salmon Sous Vide con Eneldo
+                    Holandés</b>. Para asistir al programa, contáctanos antes del 30 de
+                Noviembre.</p>
 
-        <p><small>Advertencia: El salmón cocinado a la Sous vide no está
-                pasteurizado. Evitarlo si se está embarazada o se tiene problemas de
-                alergia e inmunidad.</small></p>
-    </article>
+            <!-- Cambio: agregué <footer> dentro del artículo para agrupar la
+                 información de cierre: contacto y advertencia. -->
+            <footer>
+                <!-- Cambio: usé <address> en lugar de <p> porque es información de
+                     contacto; los lectores de pantalla y buscadores la identifican como tal. -->
+                <address>
+                    registro@masterchef.com<br>
+                    552-336-1800
+                </address>
+
+                <p><small>Advertencia: El salmón cocinado a la Sous vide no está
+                        pasteurizado. Evitarlo si se está embarazada o se tiene problemas de
+                        alergia e inmunidad.</small></p>
+            </footer>
+        </article>
+
+    </main>
 
 </body>
 
